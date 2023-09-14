@@ -1,0 +1,42 @@
+/* your-component.component.css or a global CSS file */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f0f0f0; /* Change to the desired background color */
+  }
+
+  /* Style table header */
+/* your-component.component.css or a global CSS file */
+th {
+    background-color: #16181a; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 10px; /* Add padding for spacing */
+    font-size: 16px; /* Adjust font size */
+    text-align: center; /* Center-align text */
+  }
+  
+  /* Style even rows */
+  tr:nth-child(even) {
+    background-color: #e5e5e5;
+  }
+  
+  /* Style odd rows */
+  tr:nth-child(odd) {
+    background-color: #f5f5f5;
+  }
+  
+  /* Style table cells */
+  td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  /* Hover effect on rows */
+  tr:hover {
+    background-color: #d9d9d9;
+  }
+  /* your-component.component.css or a global CSS file */
+tr {
+    border: 1px solid white; /* Add a white border to the rows */
+  }

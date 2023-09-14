@@ -1,0 +1,53 @@
+<p>home works!</p>
+<h1>{{msg}}</h1>
+{{display()}}
+<h2> Interpolation controller to view</h2>
+<div>
+    <h2>UserName: {{customerObj.code}}</h2>
+    <h2>UserCode: {{customerObj.name}}</h2>
+    <h2>Amount: {{customerObj.amount}}</h2>
+</div>
+<hr/>
+<h2>Interpolation (model to view)</h2>
+<div>
+    <h2>CustomerAmount: {{custObj.CustomerAmount}}</h2>
+    <h2>CustomerCode: {{custObj.CustomerCode}}</h2>
+    <h2>CustomerName: {{custObj.CustomerName}}</h2>
+</div>
+
+<hr/>
+<h2>one way binding (model to view)</h2>
+<h2> one way binding</h2>
+<p> UserCode: <input type = "text" name="CustomerCode" value = "{{custObj.CustomerCode}}"/></p>
+<p> UserName: <input type = "text" name="CustomerName" value = "{{custObj.CustomerName}}"/></p>
+<p> Amount: <input type = "text" name="CustomerAmount" value = "{{custObj.CustomerAmount}}"/></p>
+
+<hr/>
+<h2>one way binding[] values are coming from model to view</h2> 
+<p> UserCode: <input type = "text" name="CustomerCode" [value] = "custObj.CustomerCode"/></p>
+<p> UserName: <input type = "text" name="CustomerName" [value] = "custObj.CustomerName"/></p>
+<p> Amount: <input type = "text" name="CustomerAmount" [value] = "custObj.CustomerAmount"/></p>
+
+<hr/>
+<h2>Two way data binding model to view and view to model</h2>
+<p> UserCode: <input type = "text" name="CustomerCode" [(ngModel)] = "custObj.CustomerCode"/></p>
+<p> UserName: <input type = "text" name="CustomerName" [(ngModel)] = "custObj.CustomerName"/></p>
+<p> Amount: <input type = "text" name="CustomerAmount" [(ngModel)] = "custObj.CustomerAmount"/></p>
+
+<p> UserCode: <input type = "text" name="CustomerCode" [(ngModel)] = "custObj.CustomerCode"/></p>
+<p> UserName: <input type = "text" name="CustomerName" [(ngModel)] = "custObj.CustomerName"/></p>
+<p> Amount: <input type = "text" name="CustomerAmount" [(ngModel)] = "custObj.CustomerAmount"/></p>
+
+<hr/>
+<h2>Form handling using ngModel</h2>
+<!-- <form #frm="ngForm" (ngSubmit)="loginMe()">
+    <p> UserCode: <input type = "text" name="CustomerCode" [(ngModel)] = "custObj.CustomerCode"/></p>
+    <p> UserName: <input type = "text" name="CustomerName" [(ngModel)] = "custObj.CustomerName"/></p>
+    <p> Amount: <input type = "text" name="CustomerAmount" [(ngModel)] = "custObj.CustomerAmount"/></p>
+    <input type="submit" value="Save"/>
+</form> -->
+<p>UserName: <input type="text" name="username" [(ngModel)]="userdetails.username"/></p>
+<p>Password: <input type="password" name="password" [(ngModel)]="userdetails.password"/></p>
+<!-- <p><input type = "button" value="Login" (click)="loginMe()"/></p> -->
+<button (click) = "loginMe()" class="btn btn-primary">Login</button>
+<p>{{this.status}}</p>
