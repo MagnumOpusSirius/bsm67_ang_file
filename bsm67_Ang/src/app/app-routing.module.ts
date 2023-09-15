@@ -11,11 +11,13 @@ import { EmployeesupportComponent } from './employeesupport/employeesupport.comp
 import { CustomersupportComponent } from './customersupport/customersupport.component';
 import { Users1Component } from './users1/users1.component';
 import { User1DetailsComponent } from './user1-details/user1-details.component';
+import { DatabindingComponent } from './databinding/databinding.component';
 
 
 const routes: Routes = [
   {path : '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
+  {path: 'databinding', component: DatabindingComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'users', component: UsersComponent},
   {path: 'about', component: AboutComponent},

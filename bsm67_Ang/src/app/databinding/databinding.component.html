@@ -1,0 +1,25 @@
+<p>Attribute Directive binding</p>
+
+<h1 [ngClass]='{redBorder:true}'>Style Binding</h1>
+<p [ngStyle]="{color:'green'}">This is also a style</p>
+<hr />
+
+<!-- we can selectors to display the child property of databinding which is property
+
+-->
+<app-property [result]="1000"> </app-property> 
+<hr />
+<h3> Pre defined event binding</h3>
+<button (click)='sayHello()'>Click!</button>
+<h3>
+    Custom Event Binding
+</h3>
+<app-eventbinding (clickable)="onClickedIrfan($event)"></app-eventbinding>
+<hr />
+
+<app-lifecycle *ngIf="!delete" [bindable]="boundValue">
+    <p>{{test}}</p>
+</app-lifecycle>
+<button (click)='delete = true'>Click to Delete</button>
+<button (click)="test = 'Changed Value'">Click to Change Content</button>
+<button (click)="boundValue = 500">Click to Change Binding</button>
