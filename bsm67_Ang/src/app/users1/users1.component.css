@@ -1,0 +1,86 @@
+/* your-component.component.css or a global CSS file */
+.view-button {
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove the button border */
+    padding: 10px 20px; /* Add padding to make it look like a button */
+    cursor: pointer; /* Change cursor on hover to indicate it's clickable */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background color transition */
+
+    /* Add hover effect */
+    &:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+}
+/* Define styles for the ID column header */
+.id-column {
+    color: red; /* Change the text color to red */
+    /* Add other styles as needed */
+  }
+/* Define styles for the Name column header */
+.name-column {
+    color: blue; /* Change the text color to blue */
+    /* Add other styles as needed */
+  }
+  
+  /* Define styles for the Age column header */
+  .age-column {
+    color: rgb(243, 188, 51); /* Change the text color to green */
+    /* Add other styles as needed */
+  }
+  
+  /* Define styles for the Email column header */
+  .email-column {
+    color: orange; /* Change the text color to orange */
+    /* Add other styles as needed */
+  }
+  
+  /* Define styles for the Gender column header */
+  .gender-column {
+    color: purple; /* Change the text color to purple */
+    /* Add other styles as needed */
+  }
+  
+  /* Define styles for the Phone column header */
+  .phone-column {
+    color: brown; /* Change the text color to brown */
+    /* Add other styles as needed */
+  }
+  
+  /* Define styles for the User-details column header */
+  .user-details-column {
+    color: #15ff00; /* Change the text color to a specific color */
+    /* Add other styles as needed */
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+  }
+  /* Style table header */
+th {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+  }
+  /* Style even rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style odd rows */
+  tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  /* Style table cells */
+td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  /* Hover effect on rows */
+tr:hover {
+    background-color: #b91c1c;
+  }
